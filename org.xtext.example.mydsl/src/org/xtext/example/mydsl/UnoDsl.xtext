@@ -1,0 +1,26 @@
+grammar org.xtext.example.mydsl.UnoDsl with org.eclipse.xtext.common.Terminals
+
+generate unoDsl "http://www.xtext.org/example/mydsl/UnoDsl"
+
+UnoModel:
+	unoRules+=UnoSettings*;
+
+UnoSettings:
+	"UnoSettings" name=ID
+	putCards=PutCards?;
+
+PutCards:
+	"SpecificRules"
+	putCardsRule+=PutCardsRule
+	"SpecificRules";
+
+PutCardsRule:
+	"Rule" listPutCardsRule=ListPutCardsRule "Rule";
+
+ListPutCardsRule:
+	interception="Interception" |
+	accumulationPlus4="Accumulation+4" name=ID |
+	accumulationPlus2="Accumulation+2" name=ID |
+	classicCardRun="CardRunClassic" | 
+	royaCardRun="CardRunRoyal" | 
+	plus4OrNothing="Plus4OrNothing";

@@ -1,0 +1,5 @@
+{
+	"id":0,
+     "rules" : ["interception","accumulationPlus4", "accumulationPlus2","classicCardRun","royaCardRun","plus4OrNothing"],
+     "playAfterDesk": false
+}

@@ -1,0 +1,23 @@
+{
+	"title": "UnoSettings",
+    "description": "Settings which corresponds of a Uno play",
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "Id of the configuration with this settings",
+        "type": "real"
+      },
+      "rules": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["interception","accumulationPlus4", "accumulationPlus2","classicCardRun","royaCardRun","plus4OrNothing"]
+          }
+      },
+    },
+    "playAfterDesk": {
+        {
+            "type": "boolean",
+  
+    },     
+}

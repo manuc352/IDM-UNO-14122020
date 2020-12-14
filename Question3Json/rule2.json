@@ -1,0 +1,5 @@
+{
+	"id":1,
+     "rules" : ["accumulationPlus4", "accumulationPlus2","plus4OrNothing"],
+     "playAfterDesk": yes
+}

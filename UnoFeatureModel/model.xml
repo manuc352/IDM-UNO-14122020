@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="unoVariations">
+			<graphics key="collapsed" value="false"/>
+			<or abstract="true" mandatory="true" name="cardsPlacement">
+				<graphics key="collapsed" value="false"/>
+				<feature name="accumulationPlus2"/>
+				<feature name="accumulationPlus4"/>
+				<feature name="classicCardRun"/>
+				<feature name="plus4CardOrNothing"/>
+				<feature name="royalCardRun"/>
+				<feature name="interception"/>
+			</or>
+			<or mandatory="true" name="deck">
+				<alt name="oneTime">
+					<feature name="canPlay"/>
+					<feature name="passHisTurn"/>
+				</alt>
+				<feature name="threeTimesMax"/>
+			</or>
+			<alt abstract="true" mandatory="true" name="numberOfStackCards">
+				<feature name="oneStack"/>
+				<feature name="threeStacks"/>
+			</alt>
+			<or abstract="true" mandatory="true" name="specificCardsRule">
+				<graphics key="collapsed" value="false"/>
+				<feature name="unoCard"/>
+				<feature name="zeroCard"/>
+				<feature name="sevenCard"/>
+			</or>
+		</and>
+	</struct>
+</featureModel>

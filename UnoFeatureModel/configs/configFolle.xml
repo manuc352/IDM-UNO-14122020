@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature automatic="selected" name="unoVariations"/>
+	<feature automatic="selected" name="cardsPlacement"/>
+	<feature manual="selected" name="accumulationPlus2"/>
+	<feature name="accumulationPlus4"/>
+	<feature manual="selected" name="classicCardRun"/>
+	<feature manual="selected" name="plus4CardOrNothing"/>
+	<feature manual="selected" name="royalCardRun"/>
+	<feature manual="selected" name="interception"/>
+	<feature automatic="selected" name="deck"/>
+	<feature automatic="selected" manual="selected" name="oneTime"/>
+	<feature automatic="unselected" name="canPlay"/>
+	<feature manual="selected" name="passHisTurn"/>
+	<feature name="threeTimesMax"/>
+	<feature automatic="selected" name="numberOfStackCards"/>
+	<feature automatic="unselected" name="oneStack"/>
+	<feature manual="selected" name="threeStacks"/>
+	<feature name="specificCardsRule"/>
+	<feature manual="selected" name="unoCard"/>
+	<feature manual="selected" name="zeroCard"/>
+	<feature manual="selected" name="sevenCard"/>
+</configuration>
